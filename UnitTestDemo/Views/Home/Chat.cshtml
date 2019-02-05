@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewBag.Title = "Chat";
+}
+
+<h3>Chat</h3>
+<div class="row">
+    <div class="col-md-4">
+        <h5>Users</h5>
+        <ul class="list-group chat-users" style="" id="listUsers">
+            @*<li class="list-group-item">
+                User
+                <span class="badge badge-success font-18 mt--3">&#9679;</span>
+            </li>
+            <li class="list-group-item">
+                User
+                <span class="badge badge-success font-18 mt--3">&#9679;</span>
+            </li>*@
+        </ul>
+    </div>
+    <div class="col-md-8">
+        <h5>Chat - <span>User</span></h5>
+        <ul class="chat-container">
+            <li class="chat-message message-receive">Hi</li>
+            <li class="chat-message message-sent">Hi</li>
+        </ul>
+        <textarea class="form-control chat-input" cols="2"></textarea>
+    </div>
+</div>
+
+@section scripts{
+    <script src="~/Scripts/jquery.signalR-2.4.0.min.js"></script>
+    <script src="~/signalr/hubs"></script>
+    <script src="~/Scripts/Chat/chat.js"></script>
+}

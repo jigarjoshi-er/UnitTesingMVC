@@ -1,0 +1,80 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+.badge-success {
+    background-color: #fff;
+    color: #468847;
+}
+
+.font-18 {
+    font-size: 18px;
+}
+
+.mt--3 {
+    margin-top: -3px;
+}
+
+/* Chat page styles */
+
+.chat-users {
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+    .chat-users .list-group-item {
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+
+.chat-container {
+    list-style: none;
+    border: #ddd solid 1px;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+    .chat-container .chat-message {
+        padding: 2px;
+        border: #ddf solid 1px;
+        border-radius: 5px;
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+
+        .chat-container .chat-message.message-receive {
+        }
+
+            .chat-container .chat-message.message-receive:before {
+                content: "\25BA \2008\2008";
+            }
+
+        .chat-container .chat-message.message-sent {
+            text-align: right;
+        }
+
+            .chat-container .chat-message.message-sent:after {
+                content: "\2008\2008 \25C4";
+            }
+
+.chat-input {
+    resize: vertical;
+}
